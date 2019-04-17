@@ -10,8 +10,11 @@
     "build": "webpack --env.NODE_ENV=production",
     "dev": "webpack-dev-server"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["react"],
+  "author": {
+    "name":"ligen",
+    "email": "ligen@aerozhonghuan.com"
+  },
   "license": "ISC",
   "dependencies": {
     "react": "^16.8.6",

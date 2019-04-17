@@ -7,6 +7,5 @@ pids
 lib-cov
 coverage
 .lock-wscript
-dist
 node_modules
 example
