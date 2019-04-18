@@ -2,10 +2,7 @@
   "name": "react-carrot-test",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/bundle.js",
-  "files": [
-    "dist"
-  ],
+  "main": "src/test.js",
   "scripts": {
     "build": "webpack --env.NODE_ENV=production",
     "dev": "webpack-dev-server"
