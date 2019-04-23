@@ -13,12 +13,17 @@ module.exports = {
       {
         test: /\.js$/,
         use: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        // loader:'babel',
+        // query: {
+        //   presets: ['es2015', 'react']
+        // },
       },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      }
+      },
+      { test: /\.jsx?$/, use: 'babel-loader', exclude: /node_modules/ }
     ]
   },
   devServer: {
@@ -29,4 +34,5 @@ module.exports = {
       template: 'public/index.html'
     })
   ],
+  
 };

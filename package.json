@@ -1,19 +1,25 @@
 {
   "name": "react-carrot-test",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
   "main": "src/test.js",
   "scripts": {
     "build": "webpack --env.NODE_ENV=production",
     "dev": "webpack-dev-server"
   },
-  "keywords": ["react"],
+  "keywords": [
+    "react"
+  ],
   "author": {
-    "name":"ligen",
+    "name": "ligen",
     "email": "ligen@aerozhonghuan.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ligen111/react-carrot-test.git"
+  },
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -30,5 +36,5 @@
     "webpack-dev-server": "^3.3.1",
     "webpack-node-externals": "^1.7.2"
   },
-  "types": "types"
+  "types": "types/test.d.ts"
 }

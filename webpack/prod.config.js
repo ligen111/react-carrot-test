@@ -14,13 +14,20 @@ module.exports = {
       {
         test: /\.js$/,
         use: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        // loader:'babel',
+        // query: {
+        //   presets: ['es2015', 'react']
+        // },
       },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      }
+      },
     ]
   },
-  externals: [nodeExternals()]
+  externals: [nodeExternals()],
+  query: {
+    presets: ['es2015', 'react']
+  },
 };
